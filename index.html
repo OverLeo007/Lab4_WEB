@@ -6,11 +6,12 @@
     <link href="static/css/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="static/css/index.css" rel="stylesheet">
     <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/alert.js"></script>
     <title>Paskal</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid navbar-dark">
         <a class="navbar-brand" href="#">Чего я добился в Dota 2</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,22 +20,65 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Профиль в Steam</a>
+                    <a class="nav-link active" aria-current="page" href="https://steamcommunity.com/profiles/76561198193135930/" target="_blank">Профиль в Steam</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">DotaBuff</a>
+                    <a class="nav-link active" aria-current="page" href="https://www.dotabuff.com/players/232870202" target="_blank">DotaBuff</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Паблик с мемами</a>
+                    <a class="nav-link active" aria-current="page" href="https://vk.com/shytki_minutki" target="_blank">Паблик с мемами</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
 <main>
-    <div class="container text-center">
-        <div class="col-6">
-            <table class="hero-table table table-striped table-dark table-bordered table-sm">
+    <div class="container mt-4 mb-4 text-center records bg-dark text-white custom-container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 p-2">
+                <div class="block border-light">
+                    <p>
+                        Первая игра:
+                        28.04.2015
+                    </p>
+                    <button id="bt-1" type="button" class="btn btn-outline-info">View replay</button>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-2">
+                <div class="block">
+                    <p>
+                        Игр сыграно:
+                          768
+                    </p>
+                </div>
+                <div class="block">
+                    <p>
+                        Из них в Turbo:
+                        606
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-2">
+                <div class="block">
+                    Винрейт в Турбо:
+                    50.66%
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 p-2">
+                <div class="block">
+                    Винрейт в соло подборе:
+                    51.53%
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="line"></div>
+    <div class="hero-stat container text-center mt-4">
+        <div class="col">
+            <table class="hero-table table table-striped table-dark table-bordered">
                 <thread>
                     <th scope="col">Герой</th>
                     <th scope="col">Кол-во игр</th>
@@ -59,9 +103,30 @@
                 </tbody>
             </table>
         </div>
-
     </div>
-
+    <div class="line"></div>
+    <div class="container mt-4 mb-4 text-center bg-dark text-white custom-container">
+        <div class="row pt-4 py-2 pb-3">
+            <div class="col-md-8 col-sm-6">
+                <div class="block">
+                    <p>Хочешь сыграть со мной?</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="btn-group" role="group" aria-label="Contact">
+                    <a role="button" class="btn btn-outline-success" href="add_friend.html">
+                        Хочу
+                    </a>
+                    <button type="button" class="btn btn-outline-danger" id="sadAlertBtn">Не хочу(</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="liveAlertPlaceholder"></div>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>
