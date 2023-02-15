@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
     <script src="static/js/bootstrap.js"></script>
     <title>Paskal</title>
 </head>
@@ -31,35 +32,36 @@
     </div>
 </nav>
 <main>
-    <div class="container-fluid mb-2">
-        <div class="col-1">col-1</div>
-        <div class="col-6">col-6</div>
-        <div class="col-1">col-1</div>
-    </div>
     <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-6">
-                2 of 3 (wider)
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
+        <div class="col-6">
+            <table class="hero-table table table-striped table-dark table-bordered table-sm">
+                <thread>
+                    <th scope="col">Герой</th>
+                    <th scope="col">Кол-во игр</th>
+                    <th scope="col">Винрейт</th>
+                </thread>
+                <tbody>
+                <tr>
+                    <th scope="row"><img src="static/img/mereska.png" alt="hero"></th>
+                    <td>400</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="static/img/weaver.png" alt="hero"></th>
+                    <td>250</td>
+                    <td>64%</td>
+                </tr>
+                <tr>
+                    <th scope="row"><img src="static/img/silencer.png" alt="hero"></th>
+                    <td>30</td>
+                    <td>51%</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-5">
-                2 of 3 (wider)
-            </div>
-            <div class="col">
-                3 of 3
-            </div>
-        </div>
+
     </div>
+
 </main>
 </body>
 </html>

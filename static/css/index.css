@@ -1,0 +1,25 @@
+@import "bootstrap/bootstrap.css";
+
+body {
+    margin: 0;
+}
+
+
+.block {
+    background-color: #9ec5fe;
+    border: solid 1px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+/*.row {*/
+/*    background-color: blue; */
+/*}*/
+
+img {
+    width: 80%;
+}
+
